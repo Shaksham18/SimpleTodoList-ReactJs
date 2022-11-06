@@ -1,3 +1,76 @@
+body{
+  margin: 0;
+}
 .App {
   font-family: sans-serif;
+  display: flex;
+}
+
+.sidebar {
+  width:8vw;
+  border-right: 1px solid orange;
+  background-color: dimgrey;  
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  height: 90vh;
+  overflow-y: auto;
+}
+.open, .progress, .closed {
+  width: 30vw;
+  padding: 10px;
+}
+
+.open h1{
+  font-size: large;
+  color: darksalmon;
+}
+
+.progress h1{
+  font-size: large;
+  color: lawngreen
+}
+
+.closed h1{
+  font-size: large;
+  color: crimson
+}
+.todolist{
+  list-style: none;
+}
+.todolist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid orange;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.addTodo{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#addTodoForm{
+  width: 80%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#addTodoForm input{
+  width: 100%;
+  height: 30px;
+  border-radius: 10px; 
+  padding-left: 10px;
+  padding-right: 10px;
 }
